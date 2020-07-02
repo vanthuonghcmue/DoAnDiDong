@@ -1,14 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragment.SearchFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_border_shadow"
+        >
+        <ImageButton
+            android:id="@+id/imageButton_back"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@null"
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icons8_left_64"
+            android:scaleType="fitCenter"
+            />
+        <EditText
+            android:id="@+id/editText_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:hint="Sản phẩm, thương hiệu và mọi thứ bạn cần..."
+            android:background="@color/colorTikiBackgroundWhite"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/imageButton_back"
+            android:layout_toStartOf="@id/imageButton_clear"
+
+            />
+        <ImageButton
+            android:id="@+id/imageButton_clear"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="15dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/icons8_delete_64"
+            android:background="@null"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"/>
+    </RelativeLayout>
+
+</LinearLayout>

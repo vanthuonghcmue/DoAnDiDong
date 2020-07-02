@@ -1,13 +1,107 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Fragment.HomeFragment">
+    tools:context="Fragment.HomeFragment"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorTikiToolbar"
+        >
 
-</FrameLayout>
+        <LinearLayout
+            android:id="@+id/layout_searchName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_search_name"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/imageButton_cart"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            >
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icons8_search_unselected_64"
+                android:background="@android:color/white"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Bạn tìm gì hôm nay..."
+                android:background="@android:color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/imageButton_cart"
+            android:src="@drawable/icons8_shopping_cart_64"
+            android:background="@drawable/custom_item_2"
+            android:padding="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitCenter"
+            />
+
+    </RelativeLayout>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/viewflipper1"
+            ></ImageView>
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/viewflipper1"
+            ></ImageView>
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/viewflipper3"
+            ></ImageView>
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/viewflipper4"
+            ></ImageView>
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/viewflipper5"
+            ></ImageView>
+    </ViewFlipper>
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home"/>
+
+</LinearLayout>

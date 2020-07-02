@@ -1,11 +1,15 @@
 package com.example.tikicloneapp.Fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.tikicloneapp.AccountSettingActivity
 import com.example.tikicloneapp.R
+import com.example.tikicloneapp.SignInActivity
+import kotlinx.android.synthetic.main.fragment_profile.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,8 +38,15 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val view: View =inflater.inflate(R.layout.fragment_profile, container, false)
+        view.edit_account_setting.setOnClickListener{
+            startActivity(Intent(context, AccountSettingActivity::class.java))
+        }
+        view.Sign_in_up.setOnClickListener{
+            startActivity(Intent(context, SignInActivity::class.java))
+        }
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+        return view
     }
 
     companion object {
