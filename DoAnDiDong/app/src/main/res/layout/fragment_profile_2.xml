@@ -50,74 +50,70 @@
                 android:background="@android:color/white"
                 android:orientation="vertical">
 
+
+
                 <LinearLayout
-                    android:id="@+id/layout_login"
+                    android:id="@+id/layout_accountInfo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingHorizontal="10dp">
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/view_line_on_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="#EAECED" />
 
                     <LinearLayout
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:orientation="horizontal"
-                        android:paddingHorizontal="20dp">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/icons8_male_user_64" />
+                        android:paddingHorizontal="10dp">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginStart="10dp"
-                            android:orientation="vertical">
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingVertical="20dp">
 
-                            <TextView
+                            <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginVertical="3dp"
-                                android:text="Chào mừng bạn đến với Tiki"
-                                android:textColor="@android:color/black"/>
-
-
-                            <TextView
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/icons8_male_user_64" />
+                            <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Đăng nhập/Đăng ký"
-                                android:textColor="@color/colorPrimary"
-                                android:textSize="20dp"/>
-
+                                android:orientation="vertical"
+                                android:layout_gravity="center_horizontal"
+                                android:paddingHorizontal="20dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Ngyễn Nhật Trường"
+                                    android:textSize="17dp"
+                                    android:textColor="@android:color/black"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="nhattruongtp2000@gmail.com"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Thành viên từ 28/6/2018"/>
+                            </LinearLayout>
                         </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/icons8_more_than_64"
+                            android:scaleType="fitCenter"
+                            android:tint="@android:color/black"/>
                     </LinearLayout>
-
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_gravity="center_vertical"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/icons8_more_than_64"
-                        android:tint="@android:color/black"/>
-              </LinearLayout>
-
-               <LinearLayout
-                   android:id="@+id/layout_accountInfo"
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:orientation="vertical">
-
-                   <View
-                       android:id="@+id/view_line_on_login"
-                       android:layout_width="match_parent"
-                       android:layout_height="5dp"
-                       android:background="#EAECED" />
-
-
-               </LinearLayout>
+                </LinearLayout>
 
 
                 <LinearLayout
@@ -139,7 +135,7 @@
                         android:src="@drawable/bg_account_space"
                         android:paddingHorizontal="10dp"
                         android:paddingVertical="10dp">
-                        
+
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -160,7 +156,7 @@
                                 android:text="Kết nối mạng xã hội"
                                 android:textColor="@android:color/black" />
                         </LinearLayout>
-                        
+
                         <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
@@ -176,7 +172,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-                    
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="7dp"

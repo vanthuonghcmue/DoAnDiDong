@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorTikiToolbar"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="?attr/actionBarSize"
+                android:gravity="center"
+                android:id="@+id/layoutButton_exit"
+                android:background="@drawable/custom_item_2"
+                >
+
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icons8_delete2_64"
+                    android:clickable="false"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Đăng nhập / Đăng ký"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#000"
+                app:endIconMode="clear_text"
+                app:errorEnabled="true"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email/Số điện thoại"
+                    android:inputType="textVisiblePassword"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<ImageButton
+                android:id="@+id/imageButton_clear"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center|end"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icons8_delete_64"
+                android:visibility="gone" />-->
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#000">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mật khẩu"
+                    android:inputType="textPassword"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/button_show_hide_password"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_gravity="end|center"
+                android:text="Hiện"
+                android:textColor="@color/colorTikiToolbar"
+                android:textSize="14sp"
+                />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:text="ĐĂNG NHẬP"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:backgroundTint="#F6443F" />
+
+        <Button
+            android:id="@+id/button_forgot_password"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loadingPanel_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </LinearLayout>
+
+
+</LinearLayout>
