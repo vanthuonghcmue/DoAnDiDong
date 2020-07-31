@@ -55,6 +55,7 @@
         android:paddingHorizontal="20dp">
 
         <EditText
+            android:id="@+id/hoten"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Họ tên"
@@ -72,6 +73,7 @@
 
 
             <EditText
+                android:id="@+id/emailprofile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email"
@@ -82,6 +84,7 @@
 
 
             <EditText
+                android:id="@+id/sodt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
@@ -145,5 +148,17 @@
             android:textColor="#fff"
             android:textSize="20sp"
             app:backgroundTint="#e53935" />
+
+        <Button
+            android:id="@+id/button_logout"
+            android:layout_width="358dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:text="Đăng xuất"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:backgroundTint="@color/colorTikiToolbar" />
     </LinearLayout>
 </LinearLayout>

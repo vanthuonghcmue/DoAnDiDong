@@ -22,6 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:text="Cá nhân"
+
             android:textSize="24sp"
             android:textColor="@android:color/white"/>
 
@@ -887,17 +888,7 @@
 
 
 
-                <Button
-                    android:id="@+id/button_logout"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginVertical="10dp"
-                    android:text="Đăng xuất"
-                    android:textAllCaps="false"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp"
-                    app:backgroundTint="@color/colorTikiToolbar" />
+
             </LinearLayout>
         </ScrollView>
 

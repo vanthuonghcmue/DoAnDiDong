@@ -20,6 +20,7 @@
 
 
                 <EditText
+                    android:id="@+id/email_signin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email/Số điện thoại"
@@ -47,6 +48,7 @@
 
 
                 <EditText
+                    android:id="@+id/password_signin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Mật khẩu"

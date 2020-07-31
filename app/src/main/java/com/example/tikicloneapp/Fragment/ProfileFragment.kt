@@ -2,10 +2,10 @@ package com.example.tikicloneapp.Fragment
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.example.tikicloneapp.AccountSettingActivity
 import com.example.tikicloneapp.R
 import com.example.tikicloneapp.SignInActivity
@@ -45,7 +45,9 @@ class ProfileFragment : Fragment() {
         view.Sign_in_up.setOnClickListener{
             startActivity(Intent(context, SignInActivity::class.java))
         }
-        // Inflate the layout for this fragment
+
+        // Inflate t
+        // he layout for this fragment
         return view
     }
 

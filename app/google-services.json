@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "630842086601",
+    "firebase_url": "https://tiki-clone-app-90eba.firebaseio.com",
+    "project_id": "tiki-clone-app-90eba",
+    "storage_bucket": "tiki-clone-app-90eba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630842086601:android:e470292703f57e3a616918",
+        "android_client_info": {
+          "package_name": "com.example.tikicloneapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630842086601-7dhuvigg34n9qqajeo5go4nkq9s5hcmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT5rox5KTz6kJiPxViRyvK9w6eQvhfWH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630842086601-7dhuvigg34n9qqajeo5go4nkq9s5hcmr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,11 +1,11 @@
 package Fragment
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ViewFlipper
+import androidx.fragment.app.Fragment
 import com.example.tikicloneapp.R
+import kotlinx.android.synthetic.main.fragment_home.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,8 +21,8 @@ class HomeFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    lateinit var viewFlipper : ViewFlipper
-    var arrayHinh= intArrayOf(R.drawable.viewflipper1, R.drawable.viewflipper3,R.drawable.viewflipper4, R.drawable.viewflipper5)
+//    lateinit var viewFlipper : ViewFlipper
+//    var arrayHinh= intArrayOf(R.drawable.viewflipper1, R.drawable.viewflipper3,R.drawable.viewflipper4, R.drawable.viewflipper5)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState);
@@ -36,9 +36,15 @@ class HomeFragment : Fragment() {
 //            viewFlipper.addView(view)
 //            viewFlipper.setInAnimation(this, android.R.anim.slide_in_left)
 //            viewFlipper.setOutAnimation(this, android.R.anim.slide_out_right)
-                        viewFlipper.setFlipInterval(300)
-                        viewFlipper.setAutoStart(true)
-//            }
+//                        viewFlipper.setFlipInterval(300)
+//                        viewFlipper.setAutoStart(true)
+////            }
+            viewFlipper.setFlipInterval(1500)
+            viewFlipper.isAutoStart =true
+            viewFlipper.startFlipping()
+
+
+
         }
 
 

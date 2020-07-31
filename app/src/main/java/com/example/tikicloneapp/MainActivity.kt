@@ -1,14 +1,19 @@
 package com.example.tikicloneapp
 
+//import android.support.design.widget.BottomNavigationView
+//import androidx.core.app.Fragment
+//import android.support.v7.app.AppCompatActivity
 import Fragment.HomeFragment
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
-import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import com.example.tikicloneapp.Fragment.DashboardFragment
 import com.example.tikicloneapp.Fragment.NotificationsFragment
 import com.example.tikicloneapp.Fragment.ProfileFragment
 import com.example.tikicloneapp.Fragment.SearchFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
 
@@ -58,7 +63,6 @@ class MainActivity : AppCompatActivity() {
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
         moveToFragment(HomeFragment())
-
     }
 
     private fun moveToFragment (fragment: Fragment){
@@ -66,4 +70,15 @@ class MainActivity : AppCompatActivity() {
         fragmentTrans.replace(R.id.Frame_container, fragment)
         fragmentTrans.commit()
     }
+
+
+    /// mới thêm
+    override fun onResume() {
+        super.onResume()
+// Write a message to the database
+        val database = Firebase.database
+//        val myRef = database.getReference("message")
+//        myRef.setValue("Hello, World!")
+    }
+
 }
