@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.tikicloneapp.AccountSettingActivity
+import com.example.tikicloneapp.AddPostActivity
 import com.example.tikicloneapp.R
 import com.example.tikicloneapp.SignInActivity
 import kotlinx.android.synthetic.main.fragment_profile.view.*
@@ -44,6 +45,9 @@ class ProfileFragment : Fragment() {
         }
         view.Sign_in_up.setOnClickListener{
             startActivity(Intent(context, SignInActivity::class.java))
+        }
+        view.Dangsanpham.setOnClickListener {
+            startActivity(Intent(context, AddPostActivity::class.java))
         }
 
         // Inflate t

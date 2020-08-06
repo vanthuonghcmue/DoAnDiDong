@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPostActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+<androidx.appcompat.widget.Toolbar
+
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:background="@android:color/white"
+    tools:ignore="MissingConstraints">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+     <ImageView
+         android:layout_width="20dp"
+         android:layout_height="30dp"
+         android:id="@+id/close"
+         android:layout_alignParentStart="true"
+         android:src="@drawable/close">
+
+     </ImageView>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:id="@+id/save"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/save_edited_info">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.appcompat.widget.Toolbar>
+</com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+         <LinearLayout
+             android:id="@+id/app_bar_layout"
+             android:layout_below="@+id/barr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+             android:layout_marginTop="5dp"
+        tools:ignore="MissingConstraints">
+
+             <ImageView
+                 android:id="@+id/image_post"
+                 android:layout_width="match_parent"
+                 android:layout_height="250dp"
+                 android:scaleType="fitCenter"
+                 android:src="@drawable/chinhtri"
+                 >
+             </ImageView>
+
+             <EditText
+                 android:id="@+id/ten_sach"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="5dp"
+                 android:hint="Tên Sách"
+                 android:maxLength="100"/>
+             <EditText
+
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="5dp"
+                 android:maxLength="6"
+                 android:hint="60000đ"
+                 android:id="@+id/GiaBan"
+                 />
+
+             <EditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="5dp"
+                 android:maxLength="100"
+                 android:hint="70000"
+                 android:id="@+id/GiaGoc"
+                 />
+             <EditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="5dp"
+                 android:maxLength="100"
+                 android:hint="20"
+                 android:id="@+id/GiamGia"
+                 />
+         </LinearLayout>
+
+
+</RelativeLayout>

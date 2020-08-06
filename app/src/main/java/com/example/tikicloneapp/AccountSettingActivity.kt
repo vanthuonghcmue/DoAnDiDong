@@ -28,7 +28,6 @@ class AccountSettingActivity : AppCompatActivity() {
 
 
 
-
         button_logout.setOnClickListener{
             FirebaseAuth.getInstance().signOut()
 

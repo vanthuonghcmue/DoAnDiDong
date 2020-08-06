@@ -91,6 +91,7 @@ tools:context=".Fragment.DashboardFragment">
                     android:layout_height="match_parent"
                     android:background="@color/colorTikiUnselectedLighter"
                     android:paddingHorizontal="7dp">
+
                         <ScrollView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
@@ -439,12 +440,12 @@ tools:context=".Fragment.DashboardFragment">
                                         android:background="@drawable/custom_item_2"
 
                                         android:scaleType="fitCenter"
-                                        android:src="@drawable/giaokhoa"></ImageButton>
+                                        android:src="@drawable/java"></ImageButton>
 
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="Giáo khoa"
+                                        android:text="Lập Trình"
                                         android:textAlignment="center"
                                         android:textColor="#000"
 

@@ -122,7 +122,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:paddingHorizontal="10dp">
+                        android:paddingHorizontal="10dp"
+                        android:visibility="gone">
 
                         <LinearLayout
                             android:id="@+id/edit_account_setting"
@@ -855,6 +856,7 @@
                         android:paddingVertical="10dp">
 
                         <LinearLayout
+                            android:id="@+id/Dangsanpham"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
